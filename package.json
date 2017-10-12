@@ -1,0 +1,28 @@
+{
+  "name": "preview-mock-server-seed",
+  "version": "1.0.0",
+  "description": "A preview mock server seed based on Hapi and Swagger.",
+  "main": "index.js",
+  "repository": "https://github.com/rodoabad/preview-mock-server-seed.git",
+  "author": "rodoabad <rodoabad@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chance": "^1.0.11",
+    "fs-extra": "^4.0.2",
+    "hapi": "^16.6.2",
+    "inert": "4.2.1",
+    "swagger-parser": "^3.4.2",
+    "swagger-ui": "^2.2.10",
+    "swaggerize-hapi": "^2.0.1"
+  },
+  "devDependencies": {
+    "katulong": "^4.1.4",
+    "katulong-preset-rodoabad": "^1.9.0"
+  },
+  "scripts": {
+    "pkg:build": "node ./lib/bundle.js",
+    "pkg:lint": "katulong rodoabad lint",
+    "pkg:preview": "yarn build && node ./lib/preview.js",
+    "test": "yarn check --integrity && yarn run pkg:lint"
+  }
+}
