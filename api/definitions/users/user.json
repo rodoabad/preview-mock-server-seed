@@ -1,0 +1,22 @@
+{
+  "description": "a unique user of the system",
+  "required": [
+    "first",
+    "last",
+    "userId"
+  ],
+  "properties": {
+    "userId": {
+      "type": "string",
+      "description": "unique identifier for the user"
+    },
+    "first": {
+      "type": "string",
+      "description": "the user's first name"
+    },
+    "last": {
+      "type": "string",
+      "description": "the user's last name"
+    }
+  }
+}
