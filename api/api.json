@@ -1,0 +1,32 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Mock API",
+    "description": "Mock API for your development",
+    "version": {
+      "$ref": "../package.json#/version"
+    }
+  },
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "$ref": "./paths/index.json"
+  },
+  "definitions": {
+    "$ref": "./definitions/index.json"
+  },
+  "tags": [
+    {
+      "name": "user",
+      "description": "User account"
+    }
+  ]
+}

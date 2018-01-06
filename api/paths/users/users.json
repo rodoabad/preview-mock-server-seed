@@ -1,0 +1,16 @@
+{
+  "get": {
+    "description": "return a list of available users in the system",
+    "tags": [
+      "user"
+    ],
+    "responses": {
+      "200": {
+        "description": "a list of available users",
+        "schema": {
+          "$ref": "../../definitions/users/users.json"
+        }
+      }
+    }
+  }
+}

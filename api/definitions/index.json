@@ -1,0 +1,5 @@
+{
+   "User": {
+      "$ref": "./users/user.json"
+   }
+}

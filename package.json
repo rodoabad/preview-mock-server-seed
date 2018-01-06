@@ -11,8 +11,9 @@
     "fs-extra": "^4.0.2",
     "hapi": "^16.6.2",
     "inert": "4.2.1",
-    "swagger-parser": "^3.4.2",
+    "swagger-parser": "^4.0.1",
     "swagger-ui": "^2.2.10",
+    "swagger-ui-dist": "^3.8.1",
     "swaggerize-hapi": "^2.0.1"
   },
   "devDependencies": {
@@ -22,7 +23,7 @@
   "scripts": {
     "pkg:build": "node ./lib/bundle.js",
     "pkg:lint": "katulong rodoabad lint",
-    "pkg:preview": "yarn build && node ./lib/preview.js",
+    "pkg:preview": "yarn run pkg:build && node ./lib/preview.js",
     "test": "yarn check --integrity && yarn run pkg:lint"
   }
 }
